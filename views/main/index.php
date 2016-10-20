@@ -1,12 +1,23 @@
 <div id="headerwrap">
     <div class="container">
-        <div class="row">
-            <div class="col-lg-6 col-lg-offset-3">
-                <h4>HELLO PEOPLE, MY NAME IS</h4>
-                <h1>PAUL SILVA</h1>
-                <h4>WEB DESIGNER, DEVELOPER & GAME ADDICTED</h4>
+        <article class="clock">
+            <div class="hours-container">
+                <div class="hours"></div>
             </div>
-        </div><! --/row -->
+            <div class="minutes-container">
+                <div class="minutes"></div>
+            </div>
+            <div class="seconds-container">
+                <div class="seconds"></div>
+            </div>
+        </article>
+<!--        <div class="row">-->
+<!--            <div class="col-lg-6 col-lg-offset-3">-->
+<!--                <h4>HELLO PEOPLE, MY NAME IS</h4>-->
+<!--                <h1>PAUL SILVA</h1>-->
+<!--                <h4>WEB DESIGNER, DEVELOPER & GAME ADDICTED</h4>-->
+<!--            </div>-->
+<!--        </div><! --/row -->
     </div> <!-- /container -->
 </div><! --/headerwrap -->
 <section id="works"></section>
