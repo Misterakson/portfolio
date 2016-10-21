@@ -1,5 +1,7 @@
 <div id="headerwrap">
     <div class="container">
+        <h1 style="z-index: 15000; color: #353535">48 часов</h1>
+
         <article class="clock">
             <div class="hours-container">
                 <div class="hours"></div>
@@ -11,6 +13,7 @@
                 <div class="seconds"></div>
             </div>
         </article>
+        <h2 class="pull-left">Работы над вашими проектами</h2>
 <!--        <div class="row">-->
 <!--            <div class="col-lg-6 col-lg-offset-3">-->
 <!--                <h4>HELLO PEOPLE, MY NAME IS</h4>-->
@@ -26,22 +29,22 @@
         <h1>My Portfolio</h1>
 
         <div class="col-lg-4 col-md-4 col-sm-4 gallery">
-            <a href="work.html"><img src="assets/img/portfolio/folio01.png" class="img-responsive"></a>
+            <a href="work.html"><img src="/web/img/portfolio/folio01.png" class="img-responsive"></a>
         </div>
         <div class="col-lg-4 col-md-4 col-sm-4 gallery">
-            <a href="work.html"><img src="assets/img/portfolio/folio02.png" class="img-responsive"></a>
+            <a href="work.html"><img src="/web/img/portfolio/folio02.png" class="img-responsive"></a>
         </div>
         <div class="col-lg-4 col-md-4 col-sm-4 gallery">
-            <a href="work.html"><img src="assets/img/portfolio/folio03.png" class="img-responsive"></a>
+            <a href="work.html"><img src="/web/img/portfolio/folio03.png" class="img-responsive"></a>
         </div>
         <div class="col-lg-4 col-md-4 col-sm-4 gallery">
-            <a href="work.html"><img src="assets/img/portfolio/folio04.png" class="img-responsive"></a>
+            <a href="work.html"><img src="/web/img/portfolio/folio04.png" class="img-responsive"></a>
         </div>
         <div class="col-lg-4 col-md-4 col-sm-4 gallery">
-            <a href="work.html"><img src="assets/img/portfolio/folio05.png" class="img-responsive"></a>
+            <a href="work.html"><img src="/web/img/portfolio/folio05.png" class="img-responsive"></a>
         </div>
         <div class="col-lg-4 col-md-4 col-sm-4 gallery">
-            <a href="work.html"><img src="assets/img/portfolio/folio06.png" class="img-responsive"></a>
+            <a href="work.html"><img src="/web/img/portfolio/folio06.png" class="img-responsive"></a>
         </div>
     </div><! --/row -->
 </div><! --/container -->
