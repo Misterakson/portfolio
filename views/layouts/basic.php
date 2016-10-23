@@ -29,7 +29,7 @@ $this->beginPage();
 <body>
 <?php $this->beginBody() ?>
 
-<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+<div class="navbar navbar-default navbar-fixed-top" id="nav" role="navigation">
     <div class="container">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -38,36 +38,44 @@ $this->beginPage();
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="index.html">INSTANT</a>
         </div>
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
-                <li class="active"><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="#works">Works</a></li>
+                <li><span id="menu"><i class="fa fa-bars" aria-hidden="true"></i> MENU</span></li>
             </ul>
         </div><!--/.nav-collapse -->
     </div>
 </div>
 
+<div id="openModal" class="modalDialog">
+
+    <div class="container">
+        <p><a href="index.html">HOME</a></p>
+        <p><a href="about.html">ABOUT</a></p>
+        <p><a href="#works">WORKS</a></p>
+<!--        <p><a href="#"><i class="fa fa-times" aria-hidden="true"></i></a></p>-->
+
+    </div>
+
+
+</div>
 
 
 <?= $content ?>
-
 
 
 <div id="footerwrap">
     <div class="container">
         <div class="row centered">
             <div class="col-lg-4">
-                <p><b>WEB DESIGNER, DEVELOPER & GAME ADDICT</b></p>
+                <p><b>WEB DEVELOPER</b></p>
             </div>
 
             <div class="col-lg-4">
-                <p>Living in the amazing London.</p>
+                <p>Living in Kiev.</p>
             </div>
             <div class="col-lg-4">
-                <p>hello@instant.com</p>
+                <p>merenkovkonst@gmail.com</p>
             </div>
         </div>
     </div>

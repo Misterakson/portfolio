@@ -31,6 +31,19 @@ $(document).ready(function () {
             }
         }
     }
+
+    $('#headerwrap > div > div').fadeIn(4000);
+
+
+    $('#menu').click(function () {
+        $('div#openModal').css("display", "block");
+        $('div#openModal').css("pointer-events", "auto");
+
+    })
+    $('div#openModal').click(function () {
+        $('div#openModal').css("display", "none");
+        // $('div#openModal').css("display", "block");
+    });
 })
 // function initLocalClocks() {
 //     // Узнать местное время с помощью JS

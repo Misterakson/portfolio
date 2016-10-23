@@ -15,6 +15,11 @@
 
 @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
 
+@font-face
+{
+	font-family: PlanetN;
+	src: url(/web/fonts/planetncond.ttf);
+}
 
 ::-moz-selection {
     background: #f2c2c9;
@@ -70,7 +75,9 @@ body {
 h1, h2, h3, h4, h5, h6 {
 	font-weight: 700;
     color: #4a4a4a;
+	line-height: 100%;
 }
+
 
 
 .navbar-brand {
@@ -87,13 +94,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-	color: #1abc9c;
+	color: #888888;
 	background-color: transparent;
-	border-bottom: 2px solid #1abc9c
 }
 
 .navbar-default .navbar-nav > li > a {
-	color: #1abc9c;
+	color: #888888;
 }
 
 /* ==========================================================================
@@ -101,21 +107,22 @@ h1, h2, h3, h4, h5, h6 {
    ========================================================================== */
 
 #headerwrap {
-	background: url(../img/back1.jpeg) no-repeat center top;
+	background: url(../img/back.jpg) no-repeat ;
+	background-attachment: fixed;
 	margin-top: -70px;
-	padding-top: 120px;
+	padding-top: 250px;
 	padding-bottom: 80px;
 	text-align:center;
-	background-attachment: relative;
-	background-position: center center;
+	background-position: bottom;
 	min-height: 650px;
+    max-height: 800px;
 	width: 100%;
 	
-    -webkit-background-size: 100%;
-    -moz-background-size: 100%;
-    -o-background-size: 100%;
-    background-size: 100%;
-
+    /*-webkit-background-size: 100%;*/
+    /*-moz-background-size: 100%;*/
+    /*-o-background-size: 100%;*/
+    /*background-size: 100%;*/
+    /**/
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -239,6 +246,7 @@ h1, h2, h3, h4, h5, h6 {
 	position: relative;
 	width: 25em;
 	border: 1px solid #c1c1c1;
+    margin: 0 auto;
 }
 
 .clock.simple:after {
@@ -283,7 +291,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .seconds {
-	background: rgb(255, 67, 61);
+	background: #c1c1c1;
 	height: 45%;
 	left: 49.5%;
 	position: absolute;
@@ -306,3 +314,121 @@ h1, h2, h3, h4, h5, h6 {
 .seconds-container {
 	animation: rotate 60s infinite linear;
 }
+
+
+/*custum styles*/
+#48h
+{
+    font-size: 200px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/*модальное окно*/
+.modalDialog {
+	position: fixed;
+	font-family: Arial, Helvetica, sans-serif;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.95);
+	z-index: 99999;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	display: none;
+	pointer-events: none;
+}
+.modalDialog:target {
+	display: block;
+	pointer-events: auto;
+}
+
+.modalDialog > div {
+	width: 400px;
+	position: relative;
+	margin: 15% auto;
+	padding: 5px 20px 13px 20px;
+	border-radius: 10px;
+}
+.close {
+	color: #FFFFFF;
+	line-height: 40px;
+	position: absolute;
+	right: -12px;
+	text-align: center;
+	font-size: 60px;
+	top: -30px;
+	width: 40px;
+	height:40px;
+	text-decoration: none;
+	font-weight: bold;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	-moz-box-shadow: 1px 1px 3px #000;
+	-webkit-box-shadow: 1px 1px 3px #000;
+	box-shadow: 1px 1px 3px #000;
+}
+
+
+.modalDialog > .container
+{
+	text-align: center;
+}
+
+.modalDialog > .container a
+{
+	font-size: 50px;
+	color: white;
+	line-height: 1;
+	text-decoration:none;
+	display: inline-block;
+}
+.modalDialog > .container a:after
+{
+	display: block;
+	content: "";
+	height: 2px;
+	width: 0%;
+	background-color: #ffffff;
+	transition: width .3s ease-in-out;
+}
+.modalDialog > .container a:hover:after,
+.modalDialog > .container a:focus:after
+{
+	width: 100%;
+}
+
+.modalDialog >.container p
+{
+	margin-bottom: 80px;
+}
+#menu
+{
+	color: white;
+	position: relative;
+	top: 30px;
+	left:100px;
+}
+#menu:hover
+{
+	cursor: pointer;
+	color: #cdcdcd;
+}
+#works
+{
+	background-color: #0e0e0e;
+}
+
+.img-responsive
+{
+	opacity:0.7;
+}
+#projects_title
+{
+	color: whitesmoke;
+}
+
+
